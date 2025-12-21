@@ -117,6 +117,54 @@ button{width:100%;padding:13px;background:#1f232a;color:#fff;border:none;border-
 
 <script>
 // Predefined keys
+const keys = ["1YWUW","2UWHE","3HJ472"];
+
+function generateNow(){
+    // Fetch usedKeys
+    let usedKeys = JSON.parse(localStorage.getItem("usedKeys")||"[]");
+
+    // Reset usedKeys if old keys exist in localStorage
+    if(usedKeys.some(k=>!keys.includes(k))){
+        usedKeys = [];
+        localStorage.setItem("usedKeys", JSON.stringify([]));
+    }
+
+    document.getElementById("popup").style.display="flex";
+
+    setTimeout(()=>{
+        document.getElementById("popup").style.display="none";
+
+        if(usedKeys.length >= keys.length){
+            document.getElementById("nokey").style.display="flex";
+            return;
+        }
+
+        // Get next unused key
+        let nextKey = keys.find(k=>!usedKeys.includes(k));
+        usedKeys.push(nextKey);
+        localStorage.setItem("usedKeys",JSON.stringify(usedKeys));
+
+        document.getElementById("keyText").innerText = nextKey;
+        document.getElementById("result").classList.add("show");
+    },2000);
+}
+
+// Copy key function
+function copyKey(){
+    const key = document.getElementById("keyText").innerText;
+    navigator.clipboard.writeText(key);
+    alert("Key Copied!");
+}
+</script>
+
+</body>
+</html>        <h1>❌ NO KEY LEFT</h1>
+        <p>All free keys are used.<br>Please try again later.</p>
+    </div>
+</div>
+
+<script>
+// Predefined keys
 const keys = ["1YWUW","test key",]
 
 function generateNow(){
