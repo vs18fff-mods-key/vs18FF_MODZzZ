@@ -3,157 +3,319 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vip Panel</title>
+<title>vs MODZzZ⚡ vs MODZzZ - KEY ⚡GENERATOR ⚡ - Key ⚡Generator</title>
+
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:system-ui,sans-serif}
-body{background:#f3f3f3}
+body{
+    margin:0;
+    padding:0;
+    font-family:'Courier New', monospace;
+    background:#0a0a0a;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    color:white;
+}
 
-/* HEADER */
-.header{background:#1f232a;color:#fff;height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;font-size:18px}
+.container{
+    width:90%;
+    max-width:400px;
+    background:rgba(0,0,0,0.8);
+    border:2px solid #00f0ff;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 0 30px #00f0ff33;
+    text-align:center;
+}
 
-/* PAGE */
-.wrapper{padding:14px}
+h1{
+    font-size:28px;
+    color:#00f0ff;
+    text-shadow:0 0 10px #00f0ff,0 0 20px #00f0ff33;
+    margin-bottom:20px;
+    font-family:'Impact', sans-serif;
+}
 
-/* BALANCE */
-.balance{background:#e9e9e9;padding:14px;border-radius:6px;margin-bottom:14px}
+button{
+    width:100%;
+    padding:12px;
+    font-size:18px;
+    font-weight:bold;
+    color:black;
+    background:#00c8ff;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    margin-top:15px;
+    box-shadow:0 0 15px #00c8ff33;
+    transition:0.2s;
+}
 
-/* CARD */
-.card{background:#fff;border-radius:6px;overflow:hidden;border:1px solid #ddd}
-.card-header{background:#1f232a;color:#fff;padding:12px 14px}
-.card-body{padding:14px}
-label{font-size:13px;margin-bottom:6px;display:block}
-select,input{width:100%;padding:12px;border-radius:6px;border:1px solid #cfcfcf;margin-bottom:14px;background:#f2f2f2}
-.disabled{pointer-events:none}
-.estimation{background:#e9e9e9;padding:12px;text-align:center;border-radius:6px;margin-bottom:14px}
-button{width:100%;padding:13px;background:#1f232a;color:#fff;border:none;border-radius:6px;font-size:15px;cursor:pointer}
+button:hover{
+    box-shadow:0 0 25px #00c8ff33;
+}
 
-/* SMALL POPUP */
-.popup{position:fixed;inset:0;background:rgba(0,0,0,.5);display:none;align-items:center;justify-content:center;z-index:10}
-.popup-box{background:#fff;width:85%;max-width:320px;padding:20px;border-radius:8px;text-align:center;animation:pop .4s ease}
-@keyframes pop{from{transform:scale(.7)}to{transform:scale(1)}}
+button:active{
+    transform:scale(0.95);
+}
 
-/* FULL RESULT */
-.result{position:fixed;inset:0;background:#f2f2f2;z-index:20;transform:translateY(100%);transition:.5s ease}
-.result.show{transform:translateY(0)}
-.result-card{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:16px}
-.result-box{background:#fff;width:100%;max-width:380px;border-radius:10px;overflow:hidden;box-shadow:0 4px 15px rgba(0,0,0,.15)}
-.success{background:#dff3e7;text-align:center;padding:30px 20px}
-.success .icon{width:60px;height:60px;background:#2ecc71;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:30px;margin:0 auto 15px}
-.details{padding:20px}
-.details h3{background:#1e73ff;color:#fff;padding:10px;border-radius:6px;text-align:center;margin-bottom:14px}
-.key-box{border:2px solid #ddd;border-radius:6px;padding:14px;text-align:center;font-size:18px;font-weight:600;letter-spacing:1px;margin-bottom:12px}
-.copy{border:2px solid #1e73ff;color:#1e73ff;text-align:center;padding:12px;border-radius:6px;cursor:pointer;margin-bottom:18px}
-.info{text-align:center;font-size:14px;color:#333;margin-bottom:12px}
-.info span{display:block;margin-top:6px;font-weight:600}
+#codeTimer{
+    margin-top:10px;
+    display:none;
+    font-size:16px;
+    color:#00ff99;
+    text-shadow:0 0 10px #00ff99;
+}
 
-/* NO KEY LEFT */
-.nokey{position:fixed;inset:0;background:#0f172a;color:#fff;display:none;align-items:center;justify-content:center;z-index:30}
-.nokey-box{text-align:center;animation:slide .8s ease}
-@keyframes slide{from{transform:translateY(80px);opacity:0}to{transform:translateY(0);opacity:1}}
-.nokey h1{font-size:28px;margin-bottom:10px}
-.nokey p{opacity:.8}
+#codingBox{
+    width:90%;
+    margin:20px auto;
+    background:#050505;
+    border-left:4px solid #00f0ff;
+    padding:15px;
+    border-radius:10px;
+    text-align:left;
+    font-size:16px;
+    min-height:60px;
+    overflow-y:auto;
+}
+
+@keyframes glowPulse {
+  0% { text-shadow:0 0 10px #00c8ff55, 0 0 20px #00c8ff33; }
+  50% { text-shadow:0 0 20px #00c8ff88, 0 0 40px #00c8ff55; }
+  100% { text-shadow:0 0 10px #00c8ff55, 0 0 20px #00c8ff33; }
+}
+
+#keyBox{
+    margin-top:20px;
+    padding:20px;
+    font-size:24px;
+    font-weight:bold;
+    display:none;
+    border-radius:12px;
+    background:#111;
+    color:#00c8ff;
+    font-family:'Impact', sans-serif;
+    animation: glowPulse 2s infinite;
+    text-shadow:0 0 10px #00c8ff55,0 0 20px #00c8ff33;
+}
+
+#keyTitle{
+    font-size:22px;
+    color:#00c8ff;
+    margin-bottom:10px;
+}
+
+#copyBtn{
+    margin-top:15px;
+    padding:10px 20px;
+    font-size:16px;
+    background:#0066ff;
+    color:white;
+    font-weight:bold;
+    border:none;
+    border-radius:10px;
+    display:none;
+}
+
+#finalMsg{
+    margin-top:15px;
+    font-size:16px;
+    color:red;
+    display:none;
+}
+
+.socials{
+    margin-top:25px;
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.socials a{
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+    color:#00f0ff;
+    font-weight:bold;
+    font-size:16px;
+    padding:8px 12px;
+    border:2px solid #00f0ff;
+    border-radius:10px;
+    text-shadow:0 0 5px #00f0ff33;
+    transition:0.2s;
+}
+
+.socials a:hover{
+    background:#00f0ff;
+    color:black;
+    box-shadow:0 0 10px #00f0ff33;
+}
+
+.socials img{
+    width:18px;
+    height:18px;
+    margin-right:8px;
+}
 </style>
 </head>
 <body>
 
-<div class="header">
-    <div>Vip Panel</div> ☰
+<div class="container">
+<h1>⚡ vs MODZzZ - KEY ⚡ GENERATOR ⚡</h1>
+
+<button id="genBtn" onclick="startProcess()">Generate Key</button>
+
+<div id="codeTimer"></div>
+
+<div id="codingBox">Click Generate Key…</div>
+
+<div id="keyBox">
+    <div id="keyTitle">YOU KEY</div>
+    <div id="keyValue"></div>
 </div>
 
-<div class="wrapper">
-    <div class="balance">💳 Total Saldo $ 214727797</div>
-    <div class="card">
-        <div class="card-header">Create License</div>
-        <div class="card-body">
-            <label>Games</label>
-            <select>
-                <option>Free Fire</option>
-            </select>
-            <label>Max Devices</label>
-            <input class="disabled" value="1">
-            <label>Duration</label>
-            <select class="disabled"><option>1 Day</option></select>
-            <label>Estimation</label>
-            <div class="estimation">10</div>
-            <button onclick="generateNow()">Generate</button>
-        </div>
-    </div>
-</div>
+<button id="copyBtn" onclick="copyKey()">COPY KEY</button>
 
-<!-- SMALL POPUP -->
-<div class="popup" id="popup">
-    <div class="popup-box">
-        <h3>Generating...</h3>
-        <p>Please wait</p>
-    </div>
-</div>
+<div id="finalMsg">❌ Key Not Found! – Join Telegram for more updates</div>
 
-<!-- FULL RESULT -->
-<div class="result" id="result">
-    <div class="result-card">
-        <div class="result-box">
-            <div class="success">
-                <div class="icon">✓</div>
-                <h2>Key Generated Successfully</h2>
-            </div>
-            <div class="details">
-                <h3>Key Details</h3>
-                <div class="key-box" id="keyText"></div>
-                <div class="copy" onclick="copyKey()">📋 Copy Key</div>
-                <div class="info">🎮 GAME <span>Free Fire</span></div>
-                <div class="info">📅 DURATION <span>1 Day</span></div>
-            </div>
-        </div>
-    </div>
+<div class="socials">
+    <a href="https://www.instagram.com/virajsingh1335?igsh=cXlmZzFmNWI0YTJy" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/50/00f0ff/instagram-new.png"/>Instagram
+    </a>
+    <a href="https://youtube.com/@vs18ff?si=oIpcMeiZ7m9gm16e" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/50/00f0ff/youtube-play.png"/>YouTube
+    </a>
+    <a href="https://t.me/+En6_9Dfp0mE1Y2I1" target="_blank">
+        <img src="https://img.icons8.com/ios/50/00f0ff/telegram-app.png"/>Telegram
+    </a>
 </div>
-
-<!-- NO KEY LEFT -->
-<div class="nokey" id="nokey">
-    <div class="nokey-box">
-        <h1>❌ NO KEY LEFT</h1>
-        <p>All free keys are used.<br>Please try again later.</p>
-    </div>
 </div>
-
+  
 <script>
-// Predefined keys including new ones
-const keys = ["1YWUW","2UWHE","3HJ472","1YSM","2JJW","3JJS"];
+let keys=[
+"168-HOUR-FELXCHEATS-31942",
+"168-HOUR-FELXCHEATS-68295",
+"168-HOUR-FELXCHEATS-16209",
+"168-HOUR-FELXCHEATS-67945",
+"168-HOUR-FELXCHEATS-20647",
+"168-HOUR-FELXCHEATS-42098",
+"168-HOUR-FELXCHEATS-94861",
+"168-HOUR-FELXCHEATS-14562",
+"168-HOUR-FELXCHEATS-59860",
+"168-HOUR-FELXCHEATS-89563",
+"168-HOUR-FELXCHEATS-96458",
+"168-HOUR-FELXCHEATS-67590",
+"168-HOUR-FELXCHEATS-78412",
+"168-HOUR-FELXCHEATS-39652",
+"168-HOUR-FELXCHEATS-01435",
+"168-HOUR-FELXCHEATS-64392",
+"168-HOUR-FELXCHEATS-38651",
+"168-HOUR-FELXCHEATS-58314",
+"168-HOUR-FELXCHEATS-94678",
+"168-HOUR-FELXCHEATS-69703",
+"168-HOUR-FELXCHEATS-34197",
+"168-HOUR-FELXCHEATS-50746",
+"168-HOUR-FELXCHEATS-86279",
+"168-HOUR-FELXCHEATS-12840",
+"168-HOUR-FELXCHEATS-81435",
+"168-HOUR-FELXCHEATS-36129",
+"168-HOUR-FELXCHEATS-94826",
+"168-HOUR-FELXCHEATS-46790",
+"168-HOUR-FELXCHEATS-43167",
+"168-HOUR-FELXCHEATS-75943",
+"168-HOUR-FELXCHEATS-40361",
+"168-HOUR-FELXCHEATS-46097",
+"168-HOUR-FELXCHEATS-51803",
+"168-HOUR-FELXCHEATS-49805",
+"168-HOUR-FELXCHEATS-30648",
+"168-HOUR-FELXCHEATS-20937",
+"168-HOUR-FELXCHEATS-16825",
+"168-HOUR-FELXCHEATS-20963",
+"168-HOUR-FELXCHEATS-13027",
+"168-HOUR-FELXCHEATS-48925",
+"168-HOUR-FELXCHEATS-29731",
+"168-HOUR-FELXCHEATS-52843",
+"168-HOUR-FELXCHEATS-57608",
+"168-HOUR-FELXCHEATS-17860",
+"168-HOUR-FELXCHEATS-25473",
+"168-HOUR-FELXCHEATS-18364",
 
-function generateNow(){
-    // Fetch usedKeys
-    let usedKeys = JSON.parse(localStorage.getItem("usedKeys")||"[]");
+];
 
-    // Reset usedKeys if old keys exist in localStorage
-    if(usedKeys.some(k=>!keys.includes(k))){
-        usedKeys = [];
-        localStorage.setItem("usedKeys", JSON.stringify([]));
-    }
+let currentKey="";
 
-    document.getElementById("popup").style.display="flex";
-
-    setTimeout(()=>{
-        document.getElementById("popup").style.display="none";
-
-        if(usedKeys.length >= keys.length){
-            document.getElementById("nokey").style.display="flex";
-            return;
+function typeLine(text, elemId, totalTime, callback){
+    let i=0;
+    let elem=document.getElementById(elemId);
+    elem.innerHTML="";
+    let speed = totalTime / text.length;
+    let typer=setInterval(()=>{
+        elem.innerHTML += text.charAt(i);
+        i++;
+        if(i>=text.length){
+            clearInterval(typer);
+            if(callback) callback();
         }
-
-        // Get next unused key
-        let nextKey = keys.find(k=>!usedKeys.includes(k));
-        usedKeys.push(nextKey);
-        localStorage.setItem("usedKeys",JSON.stringify(usedKeys));
-
-        document.getElementById("keyText").innerText = nextKey;
-        document.getElementById("result").classList.add("show");
-    },2000);
+    },speed);
 }
 
-// Copy key function
+function startProcess(){
+    if(keys.length===0){
+        document.getElementById("finalMsg").style.display="block";
+        return;
+    }
+
+    document.getElementById("finalMsg").style.display="none";
+    document.getElementById("keyBox").style.display="none";
+    document.getElementById("copyBtn").style.display="none";
+    document.getElementById("keyValue").innerHTML="";
+    
+    let btn=document.getElementById("genBtn");
+    btn.disabled=true;
+
+    let timeLeft=15;
+    btn.innerText="Wait "+timeLeft+"s…";
+    let btnTimer=setInterval(()=>{
+        timeLeft--;
+        btn.innerText="Wait "+timeLeft+"s…";
+        if(timeLeft<=0){
+            clearInterval(btnTimer);
+            btn.innerText="Generate Key";
+            btn.disabled=false;
+        }
+    },1000);
+
+    let codingTime=10;
+    let ct=document.getElementById("codeTimer");
+    ct.style.display="block";
+    ct.innerText="Join Telegram for more updates | Coding: "+codingTime+"s";
+
+    let codingTimer=setInterval(()=>{
+        codingTime--;
+        ct.innerText="Join Telegram for more updates | Coding: "+codingTime+"s";
+        if(codingTime<=0){
+            clearInterval(codingTimer);
+            ct.style.display="none";
+        }
+    },1000);
+
+    let codingLine="Connecting to FELX server, encrypting module, verifying session, compiling key...";
+    typeLine(codingLine,"codingBox",10000,()=>{
+        currentKey=keys.shift();
+        document.getElementById("keyValue").innerText=currentKey;
+        document.getElementById("keyBox").style.display="block";
+        document.getElementById("copyBtn").style.display="inline-block";
+    });
+}
+
 function copyKey(){
-    const key = document.getElementById("keyText").innerText;
-    navigator.clipboard.writeText(key);
-    alert("Key Copied!");
+    navigator.clipboard.writeText(currentKey);
+    let btn=document.getElementById("copyBtn");
+    btn.innerText="COPIED ✓";
+    setTimeout(()=>{btn.innerText="COPY KEY";},1500);
 }
 </script>
 
